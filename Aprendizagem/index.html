@@ -1,17 +1,21 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Python Aprendizagem</title>
-</head>
-<body>
-        <h2>Aprendizagem de Python</h2>
- 
-        
-        <p>No Python, a indentação (espaços ou tabulações no início de uma linha) é utilizada para delimitar blocos de código. Diferente de outras linguagens que utilizam chaves ou palavras-chave, o Python utiliza a indentação para determinar o escopo das declarações. Por exemplo: </p>
+  </head>
+  <body>
+    <h2>Aprendizagem de Python</h2>
 
-        <pre>
+    <p>
+      No Python, a indentação (espaços ou tabulações no início de uma linha) é
+      utilizada para delimitar blocos de código. Diferente de outras linguagens
+      que utilizam chaves ou palavras-chave, o Python utiliza a indentação para
+      determinar o escopo das declarações. Por exemplo:
+    </p>
+
+    <pre>
             if condition:
                 # bloco de código se a condição for verdadeira
                 instrução1
@@ -20,30 +24,154 @@
                 # bloco de código se a condição for falsa
                 instrução3
                 instrução4
-        </pre>
+        </pre
+    >
 
-        <p>E inportante ter uma indentação consistente em todo o código.</p>
+    <p>E inportante ter uma indentação consistente em todo o código.</p>
 
-        <h4>Sensibilidade a maiúsculas e minúsculas</h4>
-        <p> Python distingue entre letras maiúsculas e minúsculas. Por exemplo, "variavel" e "Variavel" são consideradas variáveis diferentes.</p>
+    <h4>Sensibilidade a maiúsculas e minúsculas</h4>
+    <p>
+      Python distingue entre letras maiúsculas e minúsculas. Por exemplo,
+      "variavel" e "Variavel" são consideradas variáveis diferentes.
+    </p>
 
-        <h4>Ponto e vírgula</h4>
+    <h4>Ponto e vírgula</h4>
 
-        <p>Diferente de outras linguagens, o Python não requer o uso de ponto e vírgula (;) ao final de cada instrução. No entanto, se você desejar escrever várias instruções em uma única linha, pode separá-las com um ponto e vírgula. Por exemplo:</p>
+    <p>
+      Diferente de outras linguagens, o Python não requer o uso de ponto e
+      vírgula (;) ao final de cada instrução. No entanto, se você desejar
+      escrever várias instruções em uma única linha, pode separá-las com um
+      ponto e vírgula. Por exemplo:
+    </p>
 
-        <pre>
+    <pre>
             instrucao1; instrucao2; instrucao3
-        </pre>
+        </pre
+    >
 
-        <h4>Uso parenteses</h4>
+    <h4>Uso parenteses</h4>
 
-        <p>São utilizados para agrupar expressões e controlar a ordem de avaliação dos operadores.</p>
+    <p>
+      São utilizados para agrupar expressões e controlar a ordem de avaliação
+      dos operadores.
+    </p>
 
-        <pre>
+    <pre>
              resultado = (a + b) * c
-        </pre>
+        </pre
+    >
 
-        <h2> Tipos de Dados Básicos</h2>
-        
-</body>
+    <h2>Tipos de Dados Básicos</h2>
+
+    <h4>Inteiros (int)</h4>
+    <p>
+      São numero inteiros onde não tem a parte decimal. E não precisa de um tipo
+      especial para representá-los.
+    </p>
+    <pre>
+            idade = 25
+            quantidade = 10
+         </pre
+    >
+
+    <h4>Flutuantes (float)</h4>
+    <p>
+      São números que possuem parte decimal. Em Python, os números flutuantes
+      são representados pelo tipo float.
+    </p>
+    <pre>
+            preço = 19.99
+            altura = 1.75
+        </pre
+    >
+
+    <h4>Cadeias de texto (string)</h4>
+    <p>
+      São cadeia de texto que são representadas por aspas duplas ("") ou simples
+      (''). Alem de serem usadas para armazenar textos, strings também podem ser
+      utilizadas para realizar operações como concatenação e formatação.
+    </p>
+
+    <pre>
+        nome = "João"
+        saudacao = 'Olá, ' + nome + '!'
+    </pre>
+
+    <h4>Booleanos (bool)</h4>
+    <p>
+      São valores logicos, utilizados para false ou true, pode ser ver comumente
+      utilizados em expressões condicionais.
+    </p>
+    <pre>
+            e_maior_de_idade = True
+            tem_permissao = False
+         </pre
+    >
+
+    <p>
+      Os valores booleanos em Python começam com uma letra maiúscula: True e
+      False
+    </p>
+
+    <h2>Variáves</h2>
+
+    <p>
+      As variáveis são conteines que permite armazenar e manipular dados durante
+      a execução de um programa. Pode dar nomes variais para identificá-las. Em
+      python não e necessária a declaração de tipo, pois o python ja identifica
+      o tipo automaticamente. Pois ele e é uma linguagem de tipagem dinâmica: o
+      tipo é associado ao valor, não à variável em si
+    </p>
+
+    <h4>Declaração e Atributo de Variaveis</h4>
+    <p>
+      A variaveis são conteiner qualquer que permite armazenar e manipular dados
+      durante a execução de um programa. E para declarar elas utlizamos o
+      operador de atribuição (=), e colcoa o nome da variavel a esquerda e o
+      valor a direita.
+    </p>
+
+    <pre>
+      idade = 25
+      nome =" giovana"
+      altura = 1.75
+      e_estudante = True
+   </pre
+    >
+
+    <p>
+      Você também pode atribuir o mesmo valor a várias variáveis em uma única
+      linha usando o operador de atribuição múltipla:
+    </p>
+
+    <pre>
+       a = b = c = 10
+   </pre
+    >
+
+    <p>Neste caso, as variáveis a, b e c terão o valor 10</p>
+
+    <h4>Regras para nomear variáveis</h4>
+
+    <p>Ao nomear variáveis, é importante seguir algumas regras:</p>
+
+    <ul>
+      <li>
+        Os nomes das variáveis só podem conter letras (a-z, A-Z), números (0-9)
+        e sublinhados (_). Não podem começar com um número
+      </li>
+      <li>
+        Não se pode usar palavras-chave reservadas do Python como nomes de
+        variáveis (por exemplo, if, else, for, while, etc.).
+      </li>
+      <li>
+        O Python diferencia maiúsculas de minúsculas, então nome e Nome são
+        variáveis diferentes.
+      </li>
+      <li>
+        Recomenda-se usar nomes descritivos para as variáveis, que indiquem
+        claramente seu propósito: nome, idade, total_vendas, etc.
+      </li>
+    </ul>
+  </body>
 </html>
