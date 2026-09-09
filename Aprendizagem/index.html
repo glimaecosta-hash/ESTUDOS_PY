@@ -61,15 +61,6 @@
         </pre
     >
 
-<<<<<<< HEAD
-        <h2> Tipos de Dados Básicos</h2>
-
-
-                  
-        
-</body>
-</html>
-=======
     <h2>Tipos de Dados Básicos</h2>
 
     <h4>Inteiros (int)</h4>
@@ -182,6 +173,258 @@
         claramente seu propósito: nome, idade, total_vendas, etc.
       </li>
     </ul>
+
+    <h4>Operadores</h4>
+
+    <p>
+      São simbolos que permite realizar operações em valores e variáveis. Em
+      Python, existem vários tipos de operadores, como operadores aritméticos,
+      relacionais e lógicos.
+    </p>
+
+    <h6>Operadores Aritméticos</h6>
+
+    <p>
+      São operados matematico para operações matematica simples como adição,
+      subtração, multiplicação e divisão.
+    </p>
+
+    <ul>
+      <li>Adição: +</li>
+      <li>Subtração: -</li>
+      <li>Multiplicação: *</li>
+      <li>Divisão: /</li>
+    </ul>
+
+    <pre>
+      a = 10
+      b =3
+
+      soma = a + b   # 13
+      subtracao = a - b    # 7
+      multiplicacao = a * b    # 30
+      divisao = a / b   # 3.333333333
+      divisao_inteira = a // b   # 3
+      modulo = a % b   # 1
+      exponenciacao = a ** b   # 1000
+    </pre>
+
+    <h6>Operadores de Comparação</h6>
+
+    <p>
+      São operadores que permitem comparar valores e retornar um valor booleano
+      (True ou False).
+    </p>
+
+    <ul>
+      <li>Igualdade: ==</li>
+      <li>Diferente: !=</li>
+      <li>Maior que: ></li>
+      <li>Menor que: <</li>
+      <li>Maior ou igual a: >=</li>
+      <li>Menor ou igual a: <=</li>
+    </ul>
+
+    <pre>
+       a = 10
+       b = 3
+
+
+       igual = a == b   # False
+       diferente = a != b   # True
+       maior que = a > b   # True
+       menor que = a < b   # False
+       maior ou igual = a >= b   # True
+       menor ou igual = a <= b   # False
+    </pre>
+
+    <h6>Operadores Lógicos</h6>
+
+    <p>
+      São utilizados para combinar expressões condicionais e avaliar multiplas
+      condições.
+    </p>
+
+    <p>Isso em lógica de Python:</p>
+
+    <ul>
+      <li>AND (and): Desvolve Tru se ambas foram condições verdadeiras</li>
+      <li>
+        OR (or): Desvolve True se ao menos uma das condições for verdadeira
+      </li>
+      <li>
+        NOT (not): Inverte o valor da condiçoes, descolve tru se for falsa e
+        false se for verdadeira
+      </li>
+    </ul>
+
+    <pre>
+      a = 10
+      b = 3
+
+
+     resultado_and = (a > 5) and (b < 5)   # True
+     resultado_or = (a > 15) or (b < 5)   # True
+     resultado_not = not (a > 5)   # False
+   </pre>
+    >
+
+    <h4>Estruturas de Controle</h4>
+
+    <p>
+      São estruturas que permite ter o controle de fluxos de execução do
+      programa. Como por exemplos podemos criar condições e loops. Essas
+      estruturas nos permitem tomar decisões e repetir blocos de código segundo
+      certas condições.
+    </p>
+
+    <h6>Estrutura Condicionais</h6>
+
+    <p>
+      A estrutura de condições lesas nos permite executar diferente blocos caso
+      um deles não seja atendido. As condições mais utilizadas são if, if-else e
+      if-elif-else.
+    </p>
+
+    <h6>if</h6>
+
+    <p>O if utilizado quando um bloco de código e uma condição verdadeira.</p>
+    <pre>
+       If condicao:
+          # Bloco de código a ser executado se a condição for verdadeira instruções
+     </pre
+    >
+
+    <pre>
+        idade = 18
+         if idade >= 18:
+            print("Você é maior de idade.")
+     </pre
+    >
+
+    <h6>if-else</h6>
+    <p>
+      O if-else é utilizado quando queremos executar um bloco de código se a
+      condição for verdadeira e outro bloco se a condição for falsa.
+    </p>
+
+    <pre>
+        idade = 15
+
+        if idade >= 18:
+            print("Voce e maior de idade.")
+        else:
+            print("Voce e menor de idade.")
+      </pre
+    >
+
+    <h6>if-elif-else</h6>
+    <p>
+      O if-elif-else é utilizado quando queremos verificar múltiplas condições e
+      executar diferentes blocos de código conforme a condição que for atendida.
+    </p>
+
+    <pre>
+          if condicao1:
+
+          # Bloco de código a executar se a condicao1 for verdadeira
+          instruções
+
+         elif condicao2:
+
+         # Bloco de código a executar se a condicao2 for verdadeira
+         instruções
+
+         else:
+
+         # Bloco de código a executar se nenhuma condição anterior for verdadeira
+         instruções
+       </pre
+    >
+
+    <pre>
+          nota = 85
+         if nota >= 90:
+           print ("Excelente")
+
+         elif nota >= 80:
+           print ("Muito bom")
+
+          elif nota >= 70:
+            print ("Bom")
+
+         else:
+          print ("Precisa melhorar")
+       </pre>
+     
+       <h4>Loops</h4>
+
+        <p> o loop nos permite executar varias condições repetidas vezes. e a mais comuns são " for " e " while ".</p>
+
+        <h6> O loop for:</h6>
+
+        <p>Ele e uma forma de lista para iterar sobre uma sequência de elementos.</p>
+         <pre>
+           for variavel in sequencia:
+             # Bloco de código a repetir instruções
+         </pre>
+       
+
+         <pre>
+           frutas = [ " maça, banana, mamão, laranja "]
+          
+           for fruta in frutas:
+             print(fruta)
+         </pre>
+
+         <h6> O loop while:</h6>
+
+          <p> O loop while é utilizado quando queremos repetir um bloco de código enquanto uma condição for verdadeira. Podemos usar o exeplo do contador ele se repete enquanto a condição for verdadeira ate chegar o numero desejado.</p>
+
+          <pre>
+              while condição:
+               # Bloco de código a repetir instruções
+          </pre>
+
+          <pre>
+             contador = 0
+              while contador < 5:
+                 print(contador)
+                 contador += 1
+          </pre>
+
+          <h4>Controle de loops</h4>
+
+          <p>O python oferece algumas palavras-chave para controlar o fluxo dos loops, como o <code>break</code> e o <code>continue</code>.</p>
+
+          <h6>break</h6>
+           <p>E utilizado para sair prematuramente de um loop. Quando o break é executado, o loop é interrompido imediatamente.</p>
+            <pre>
+               contador  = 0
+                while true:
+                    print(contador)
+                    contador += 1
+                    if contador == 5:
+                        break
+            </pre>
+
+            <h6>continue</h6>
+            <p>A instrução continue é utilizada para pular o restante do bloco de código dentro de um loop e passar para a próxima iteração.</p>
+
+            <pre>
+                for i in range(10):
+
+                  if i % 2 == 0:
+                    continue
+                print(i)
+            </pre>
+
+            <p>Neste exemplo, o loop for itera sobre os números de 0 a 9 utilizando a função range(). Dentro do loop, verifica-se se o número é divisível por 2 utilizando o operador de módulo %. Se o número for divisível por 2 (ou seja, se for par), a instrução continue é executada, fazendo com que o restante do bloco de código seja pulado e passando para a próxima iteração do loop. Como resultado, apenas os números ímpares serão impressos.</p>
+
+
+      
+
+        
+
   </body>
 </html>
->>>>>>> 6e1d6f2d08b338150d5e8ae5279a9409178e26b4
