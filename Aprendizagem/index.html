@@ -266,7 +266,8 @@
      resultado_and = (a > 5) and (b < 5)   # True
      resultado_or = (a > 15) or (b < 5)   # True
      resultado_not = not (a > 5)   # False
-   </pre>
+   </pre
+    >
     >
 
     <h4>Estruturas de Controle</h4>
@@ -355,76 +356,268 @@
 
          else:
           print ("Precisa melhorar")
-       </pre>
-     
-       <h4>Loops</h4>
+       </pre
+    >
 
-        <p> o loop nos permite executar varias condições repetidas vezes. e a mais comuns são " for " e " while ".</p>
+    <h4>Loops</h4>
 
-        <h6> O loop for:</h6>
+    <p>
+      o loop nos permite executar varias condições repetidas vezes. e a mais
+      comuns são " for " e " while ".
+    </p>
 
-        <p>Ele e uma forma de lista para iterar sobre uma sequência de elementos.</p>
-         <pre>
+    <h6>O loop for:</h6>
+
+    <p>
+      Ele e uma forma de lista para iterar sobre uma sequência de elementos.
+    </p>
+    <pre>
            for variavel in sequencia:
              # Bloco de código a repetir instruções
-         </pre>
-       
+         </pre
+    >
 
-         <pre>
+    <pre>
            frutas = [ " maça, banana, mamão, laranja "]
           
            for fruta in frutas:
              print(fruta)
-         </pre>
+         </pre
+    >
 
-         <h6> O loop while:</h6>
+    <h6>O loop while:</h6>
 
-          <p> O loop while é utilizado quando queremos repetir um bloco de código enquanto uma condição for verdadeira. Podemos usar o exeplo do contador ele se repete enquanto a condição for verdadeira ate chegar o numero desejado.</p>
+    <p>
+      O loop while é utilizado quando queremos repetir um bloco de código
+      enquanto uma condição for verdadeira. Podemos usar o exeplo do contador
+      ele se repete enquanto a condição for verdadeira ate chegar o numero
+      desejado.
+    </p>
 
-          <pre>
+    <pre>
               while condição:
                # Bloco de código a repetir instruções
-          </pre>
+          </pre
+    >
 
-          <pre>
+    <pre>
              contador = 0
               while contador < 5:
                  print(contador)
                  contador += 1
-          </pre>
+          </pre
+    >
 
-          <h4>Controle de loops</h4>
+    <h4>Controle de loops</h4>
 
-          <p>O python oferece algumas palavras-chave para controlar o fluxo dos loops, como o <code>break</code> e o <code>continue</code>.</p>
+    <p>
+      O python oferece algumas palavras-chave para controlar o fluxo dos loops,
+      como o <code>break</code> e o <code>continue</code>.
+    </p>
 
-          <h6>break</h6>
-           <p>E utilizado para sair prematuramente de um loop. Quando o break é executado, o loop é interrompido imediatamente.</p>
-            <pre>
+    <h6>break</h6>
+    <p>
+      E utilizado para sair prematuramente de um loop. Quando o break é
+      executado, o loop é interrompido imediatamente.
+    </p>
+    <pre>
                contador  = 0
                 while true:
                     print(contador)
                     contador += 1
                     if contador == 5:
                         break
-            </pre>
+            </pre
+    >
 
-            <h6>continue</h6>
-            <p>A instrução continue é utilizada para pular o restante do bloco de código dentro de um loop e passar para a próxima iteração.</p>
+    <h6>continue</h6>
+    <p>
+      A instrução continue é utilizada para pular o restante do bloco de código
+      dentro de um loop e passar para a próxima iteração.
+    </p>
 
-            <pre>
+    <pre>
                 for i in range(10):
 
                   if i % 2 == 0:
                     continue
                 print(i)
-            </pre>
+            </pre
+    >
 
-            <p>Neste exemplo, o loop for itera sobre os números de 0 a 9 utilizando a função range(). Dentro do loop, verifica-se se o número é divisível por 2 utilizando o operador de módulo %. Se o número for divisível por 2 (ou seja, se for par), a instrução continue é executada, fazendo com que o restante do bloco de código seja pulado e passando para a próxima iteração do loop. Como resultado, apenas os números ímpares serão impressos.</p>
+    <p>
+      Neste exemplo, o loop for itera sobre os números de 0 a 9 utilizando a
+      função range(). Dentro do loop, verifica-se se o número é divisível por 2
+      utilizando o operador de módulo %. Se o número for divisível por 2 (ou
+      seja, se for par), a instrução continue é executada, fazendo com que o
+      restante do bloco de código seja pulado e passando para a próxima iteração
+      do loop. Como resultado, apenas os números ímpares serão impressos.
+    </p>
+
+    <h6>Pass</h6>
+    <p>
+      A instrução pass é uma operação nula que não faz nada. É utilizada como um
+      marcador de posição quando uma instrução é sintaticamente necessária, mas
+      nenhuma ação é desejada.
+    </p>
+
+    <pre>
+             for i in range(5):
+                     pass
+         </pre
+    >
+
+    <h2>Estrutura de Dados</h2>
+
+    <p>
+      As estruturas de dados são forma de armazenar e organizar dados de maneira
+      eficiente. Em python a varios tipos e estruturas de dados integrados, como
+      lista, tuplas, dicionarios e conjuntos e cada um tem suas características
+      e usos específicos.
+    </p>
+
+    <h4>Listas</h4>
+
+    <p>
+      Uma lista são estruturas de dados que armazenam uma coleção ordenada de
+      elementos. Os elementos de uma lista podem ser de qualquer tipo, incluindo
+      números, strings, outras listas e até mesmo funções. e são separados por
+      vírgulas e encerrados em colchetes.
+    </p>
+
+    <h5>Criação e Acesso:</h5>
+
+    <p>
+      para criar ma lista, basta utilizar colchetes e separar os elementos por
+      vírgulas:
+    </p>
+    <pre>
+            frutas = ["maça", " banana", "laranja"]
+        </pre
+    >
+
+    <p>
+      Para acessar os elementos de uma lista, você pode usar índices, que
+      começam em 0 para o primeiro elemento:
+    </p>
+
+    <pre>
+             print(frutas[0])  # Imprime "maçã"
+             print(frutas[1])  # Imprime "banana"
+             print(frutas[2])  # Imprime "laranja"
+         </pre
+    >
+
+    <p>
+      Voce pode acessar os elementos aparti do final da lista usando índices
+      negativos:
+    </p>
+    <pre>
+              print(frutas[-1])  # Imprime "laranja"
+              print(frutas[-2])  # Imprime "banana"
+              print(frutas[-3])  # Imprime "maçã"
+          </pre
+    >
+
+    <h5>Métados de Listas</h5>
+
+    <p>
+      A Lista em python nos permites ter varos metados que possibilita manipular
+      os elementos da lista e modificar seu conteúdo. Veja abaixo alguns
+      exemplos:
+    </p>
+
+    <ul>
+      <li>append(): Adiciona um elemento ao final da lista.</li>
+      <li>insert(): Insere um elemento em uma posição específica da lista.</li>
+      <li>remove(): Remove a primeira ocorrência de um elemento na lista.</li>
+      <li>
+        pop(): Remove e retorna o último elemento da lista (ou um elemento
+        específico).
+      </li>
+      <li>sort(): Ordena os elementos da lista em ordem crescente.</li>
+      <li>reverse(): Inverte a ordem dos elementos na lista.</li>
+      <li>len(): Retorna o número de elementos na lista.</li>
+    </ul>
+
+    <pre>
+         frutas = ["maçã", "banana", "laranja"]
 
 
+         frutas.append("pera")
+         print(frutas)  # Imprime ["maçã", "banana", "laranja", "pera"]
+
+
+         frutas.insert(1, "uva")
+         print(frutas)  # Imprime ["maçã", "uva", "banana", "laranja", "pera"]
+
+
+         frutas.remove("banana")
+         print(frutas)  # Imprime ["maçã", "uva", "laranja", "pera"]
+
+
+         fruta_removida = frutas.pop(2)
+         print(frutas)  # Imprime ["maçã", "uva", "pera"]
+         print(fruta_removida)  # Imprime "laranja"
+
+
+         frutas.sort()
+         print(frutas)  # Imprime ["maçã", "pera", "uva"]
+
+
+         frutas.reverse()
+         print(frutas)  # Imprime ["uva", "pera", "maçã"]
+      </pre>
+
+    <h5>Lista de Compreensão</h5>
+
+     <p>A lista de compreensão e uma forma consisa de criar novas listas baseadas em uma sequencia existente. Permitem filtrar e transformar os elementos de uma lista em uma única linha de código.</p>
+
+     <pre>
+         nova_lista = [expressão for elemento in sequência if condição]
+     </pre>
+
+     <pre>
+        números = [1, 2, 3, 4, 5]
+        quadrados = [x ** 2 for x in números if x % 2 == 0]
+        print(quadrados)  # Imprime [4, 16]
+     </pre>
+
+      <h3>Tuplas</h3>
+
+      <p>A tupla e uma coleção ordenada e imutavel de lementos, pois isso significa que uma vez criada, seus elementos não podem ser modificados. uma tupla e criada em pareteses e não colchetes, e uma tupla so e uma tupla quando e uma virgula no final.</p>
+
+      <p>Para criar uma tupla, encerre os elementos em parênteses. Para acessar os elementos de uma tupla, use índices entre colchetes.</p>
       
+       <pre>
+        ponto = (3, 4)
+        print(ponto[0])  # Imprime 3
+        print(ponto[1])  # Imprime 4
+       </pre>
 
-        
+       <p>As tuplas são úteis quando você precisa armazenar uma coleção de elementos que não devem ser modificados, como coordenadas ou dados de configuração.</p>
+
+       <h3> Métados de Tuplas </h3>
+        <p>Embora a tupla seja imutavel, no python a meios metodos podem ser usados para manipular suas propriedades.</p>
+
+        <ul>
+          <li>count(elemento): devolve o número de vezes que um elemento aparece na tupla. </li>
+          <li>index(elemento): devolve o índice da primeira aparição de um elemento na tupla. Opcionalmente, pode-se especificar o início e fim da busca. </li>
+          <li>len(tupla): embora não seja um método de tupla propriamente dito, esta função incorporada devolve o comprimento da tupla.</li>
+        </ul>
+
+        <pre>
+          minha_tupla = (1, 2, 3, 2, 4, 2)
+          print (minha_tupla.index(2))   # Saída: 1
+          print (minha_tupla.index(2, 2))   #Saída: 3
+          print (minha_tupla.index(2, 2, 4))   #Saída: 3
+        </pre>
+
+        <h3>Dicionários</h3>
+        <p> Um dicionario e uma estrutura de dados mutavel e não ordenados, que possibilita armazenar pares de chave-valor. Cade elemento e um dicionario unico. Os dicionários são delimitados por chaves {}, e os pares chave-valor são separados por vírgulas.</p>
+
+        <h4>Criação e Acesso</h4>
+        <p></p>
 
   </body>
 </html>
